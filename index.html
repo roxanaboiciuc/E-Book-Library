@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <!--- content="width=device-width  ---->
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link scr="image/images.png">
     <title> E-book library </title>
   </head>
@@ -14,8 +14,8 @@
     </header>
     <div class="topnav">
   <a class="active" href="#home">Home</a>
-  <a href="/Pages/about.html">About</a>
-  <a href="/Pages/contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
   <form action="/action_page.php">
       <input type="text" placeholder="Search.." name="search">
       <button type="submit">Submit</button>
@@ -23,16 +23,16 @@
 </div>
 <h4>Please check the available e-book on the website below. Click on view and begin reading!</h4>
 
-<table>
+<table id="my-table">
   <tr>
-    <th>Author</th>
-    <th>Title</th>
-    <th>View</th>
+    <th onclick="sortTable(0)">Author</th>
+    <th onclick="sortTable(1)">Title</th>
+    <th>Click to view</th>
   </tr>
   <tr>
     <td>Agatha Christie</td>
     <td>Crima din orient express</td>
-    <th><a href="C:\Users\X1ROXABO\OneDrive - DRiV Inc\Roxana Boiciuc\Personal\Library Management System\Database\Books\agatha-christie-crima-din-orient-expres-pdf.pdf">View</a></th>
+    <th><a href="Books\agatha-christie-crima-din-orient-expres-pdf.pdf">View</a></th>
   </tr>
   <tr>
     <td>Cecilia Ahern</td>
